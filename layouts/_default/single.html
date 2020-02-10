@@ -11,14 +11,18 @@
       <div id="status"></div>
     </div>
 
+    {{ partial "javascript.html" . }}
     {{ block "main" . }}
 
     {{ partial "single/single.html" . }}
 
-    {{ if .Params.include_footer }}
+    {{ if .Site.Params.footer }}
     {{ partial "footer.html" . }}
     {{ end }}
-
+<!--    {{ if .Params.include_footer }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+-->
     <!-- Back To Top Button -->
     <div id="backtotop"><a href="#"></a></div>
 
@@ -28,6 +32,6 @@
 
     {{ end }}
 
-    {{ partial "javascript.html" . }}
   </body>
+  
 </html>
