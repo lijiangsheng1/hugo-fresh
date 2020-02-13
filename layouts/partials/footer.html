@@ -3,6 +3,7 @@
 {{- $quickLinks  := index $footer "quicklinks" }}
 {{- $socialMedia := index $footer "socialmedia" }}
 {{- $bulmaLogo   := index $footer "bulmalogo" }}
+{{- $ocselectedlogo   := index $footer "ocselectedlogo" }}
 {{- $socialMediaTitle    := index $footer "socialmediatitle" }}
 <footer class="footer footer-dark">
   <div class="container">
@@ -43,12 +44,26 @@
                 {{- end }}
               </div>
             </nav>
-
+            <p>-------------------------</p>
+             <div class="level-left">
             {{- if $bulmaLogo }}
-            <a href="https://www.ocselected.org/community/communication/" target="_blank">
-              <img src="{{ "/images/logos/ocselected.png" | relURL }}" alt="社区驱动" width="128" height="24">
+            <p>本站点出品:</p>
+            <a href="https://bulma.io/" target="_blank">
+              <img src="{{ "/images/logos/made-with-bulma.png" | relURL }}" alt="" width="128" height="24">
             </a>
             {{- end }}
+             </div>
+             <div class="level-left">
+            <p>-------------------------</p>
+             </div>
+             <div class="level-left">
+            {{- if $ocselectedlogo }}
+            <p>共同体驱动:</p>
+            <a href="https://www.ocselected.org/community/communication/" target="_blank">
+              <img src="{{ "/images/logos/ocselected.png" | relURL }}" alt="" width="128" height="16">
+            </a>
+            {{- end}}
+             </div>
           </div>
         </div>
       </div>
