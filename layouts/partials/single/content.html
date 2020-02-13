@@ -1,14 +1,29 @@
-
-<section class="section is-medium">
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <!--
+      <h1 class="title">
+         
+      </h1>
+      <h2 class="subtitle">
+        Primary subtitle
+      </h2>
+      -->
+    </div>
+  </div>
+</section>
+<section>
   <div class="container">
     <div class="columns">
       <div class="column is-one-fifths"></div>
       <div class="column is-three-fifths">
         <h1 class="title is-1 is-center" style="text-align:center">{{ .Title }}</h1>
         <h3 class="subtitle is-3 is-muted" style="text-align:center">{{ .Params.Subtitle }}</h3>
+         <div class="is-divider"></div>
          <div class="content">
            {{ .Content }}
          </div>
+         <div class="is-divider"></div>
       </div>
       <div class="column is-one-fifths"></div>
     </div>
